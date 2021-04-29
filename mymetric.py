@@ -1,6 +1,6 @@
 class mymetric(tf.keras.metrics.Metric):
     # custom metric 
-    # for calculate the precision for 3-classification (label = 2)
+    # to calculate the precision for 3-classification (label = 2)
     def __init__(self, name="precision", **kwargs):
         super(mymetric, self).__init__(name=name, **kwargs)
         self.precision = self.add_weight(name="prec",initializer="zeros")
